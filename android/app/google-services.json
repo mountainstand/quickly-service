@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "133440251506",
+    "project_id": "quickly-4df80",
+    "storage_bucket": "quickly-4df80.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:133440251506:android:ef1f85e25abb8cdd7944eb",
+        "android_client_info": {
+          "package_name": "com.example.vpn_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCu0Q6gAwS2nHVCMAlsCezBmoWVNwpxLdM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:133440251506:android:975cce398ea346c77944eb",
+        "android_client_info": {
+          "package_name": "com.vpn.quickly.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCu0Q6gAwS2nHVCMAlsCezBmoWVNwpxLdM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
