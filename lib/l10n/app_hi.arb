@@ -1,0 +1,20 @@
+{
+    "appName": "क्विक वीपीएन",
+    "@appName": {
+      "description": "ऐप का नाम"
+    },
+    "yourIP": "आपका आईपी: {ipAddress}",
+    "@yourIP": {
+      "description": "एकल पैरामीटर के साथ दिखाएँ",
+      "placeholders": {
+        "ipAddress": {
+          "type": "String",
+          "example": "192.168.1.1"
+        }
+      }
+    },
+    "tapToConnect": "कनेक्ट करने के लिए टैप करें",
+    "connectedTime": "कनेक्टेड समय",
+    "download": "डाउनलोड",
+    "upload": "अपलोड"
+}

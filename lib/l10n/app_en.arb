@@ -1,0 +1,156 @@
+{
+  "appName": "Quickly VPN",
+  "@appName": {
+    "description": "App Name"
+  },
+  "vpn": "VPN",
+  "speed": "Speed",
+  "upgrade": "Upgrade",
+  "menu": "Menu",
+  "yourIP": "Your IP: {ipAddress}",
+  "@yourIP": {
+    "description": "Provide IP Address in parameter",
+    "placeholders": {
+      "ipAddress": {
+        "type": "String",
+        "example": "192.168.1.1"
+      }
+    }
+  },
+  "retrievingWithThreeDots": "Retrieving...",
+  "tapToConnect": "Tap to Connect",
+  "connectedTime": "Connected Time",
+  "download": "Download",
+  "upload": "Upload",
+  "serverLocations": "Server Locations",
+  "testSpeed": "Test Speed",
+  "processingWithThreeDots": "Processing...",
+  "testAgain": "Test Again",
+  "selectLanguage": "Select Language",
+  "speedCompare": "Speed Compare",
+  "before": "Before",
+  "after": "After",
+  "ping": "Ping",
+  "jitter": "Jitter",
+  "loss": "Loss",
+  "upgradeToPremium": "Upgrade to Premium",
+  "activeSubscription": "Active Subscription",
+  "removeAdsAndUnlockAllLocation": "Remove ads and unlock all location",
+  "cancelSubscription": "Cancel Subscription",
+  "restoreSubscription": "Restore Subscription",
+  "noProductsAvailableCurrenlty": "No products available currenlty.",
+  "boughtOn": "Bought On {boughtDate}",
+  "@boughtOn": {
+    "description": "Provide Subscription bought date in parameter",
+    "placeholders": {
+      "boughtDate": {
+        "type": "String",
+        "example": "Februray 3, 2025"
+      }
+    }
+  },
+  "expiryDateWithColon": "Expiry Date: {expiryDate}",
+  "@expiryDateWithColon": {
+    "description": "Provide Subscription expiry date in parameter",
+    "placeholders": {
+      "expiryDate": {
+        "type": "String",
+        "example": "Februray 8, 2025"
+      }
+    }
+  },
+  "currentPlan": "Current Plan",
+  "mostPopular": "Most Popular",
+  "getPremiumNow": "Get Premium Now",
+  "totalPrice": "Total price: {price}",
+  "@totalPrice": {
+    "description": "Provide price with currency in parameter",
+    "placeholders": {
+      "price": {
+        "type": "String",
+        "example": "$20.0"
+      }
+    }
+  },
+  "forwardSlashMonth": "/Month",
+  "adsFree": "Ads Free",
+  "hideIP": "Hide IP",
+  "secure": "Secure",
+  "faster": "Faster",
+  "wireGuard": "WireGuard",
+  "openVPN": "Open VPN",
+  "ikev2IPSEC": "IKEv2/IPSec",
+  "selectProtocol": "Select Protocol",
+  "profile": "Profile",
+  "login": "Login",
+  "notifications": "Notifications",
+  "darkTheme": "Dark Theme",
+  "language": "Language",
+  "internetNotConnected": "Please check your internet and try later",
+  "userIDWithColon": "User ID:",
+  "myIPWithColon": "My IP:",
+  "typeWithColon": "Type:",
+  "freeAllCaps": "FREE",
+  "premiumAllCaps": "PREMIUM",
+  "logInVia": "Log in via",
+  "email": "Email",
+  "signOut": "Sign Out",
+  "deleteAccount": "Delete Account",
+  "welcomeBack": "Welcome Back",
+  "signInToContinueUsing": "Sign in to continue using {appName}",
+  "@signInToContinueUsing": {
+    "description": "Provide app name",
+    "placeholders": {
+      "appName": {
+        "type": "String",
+        "example": "Quickly VPN"
+      }
+    }
+  },
+  "enterYourEmail": "Enter your email",
+  "enterValidEmail": "Enter valid email",
+  "enterPassword": "Enter password",
+  "enterValidPassword": "Password should be of atleast 6 letters",
+  "forgotPasswordQuestionMark": "Forgot Password?",
+  "signIn": "Sign In",
+  "orSignInWith": "Or sign in with",
+  "createNewAccountQuestionMark": "Create New Account?",
+  "signUp": "Sign Up",
+  "byContinuingYouAgreeToOur": "By continuing you agree to our",
+  "termsOfService": "Terms of Service",
+  "and": "and",
+  "privacyPolicy": "Privacy Policy",
+  "apple": "Apple",
+  "google": "Google",
+  "secureYourConnection": "Secure Your Connection",
+  "joinMillionsOfUsersProtectingTheirOnlinePrivacy": "Join millions ofUsers protecting their online privacy",
+  "enterYourName": "Enter your name",
+  "createPassword": "Create password",
+  "confirmPassword": "Confirm password",
+  "enterConfirmPassword": "Enter Confirm password",
+  "passwordAndConfirmPasswordShouldMatch": "Password and confirm password does not match",
+  "orSignUpWith": "Or sign up with",
+  "alreadyhaveAnAccountQuestionMark": "Already have an account?",
+  "enterYourEmailAndLinkWillBeSendToResetYourPassword": "Enter your email address and we'll send you a link to reset your password.",
+  "sendOTP": "Send OTP",
+  "otpVerification": "OTP Verification",
+  "pleaseEnterTheCodeWeJustSendToYourAccount": "Please enter the code we just send to your email {emailAddress}",
+  "@pleaseEnterTheCodeWeJustSendToYourAccount": {
+    "description": "Provide Email Address in parameter",
+    "placeholders": {
+      "emailAddress": {
+        "type": "String",
+        "example": "johndoe@gmail.com"
+      }
+    }
+  },
+  "submit": "Submit",
+  "didnotReceiveVerificationCodeQuestionMark": "Didn't receive verification code?",
+  "enterValidOTP": "Enter valid OTP",
+  "resendCode": "Resend Code",
+  "changePassword": "Change Password",
+  "pleaseEnterYourNewPasswordAndConfirmTheNewPassword": "Please enter your new password, and confirm the new password",
+  "newPassword": "New Password",
+  "enterNewPassword": "Enter new Password",
+  "save": "Save"
+}

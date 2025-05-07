@@ -1,0 +1,85 @@
+# Uncomment this line to define a global platform for your project
+platform :ios, '15.0'
+
+# CocoaPods analytics sends network stats synchronously affecting flutter build latency.
+ENV['COCOAPODS_DISABLE_STATS'] = 'true'
+
+project 'Runner', {
+  'Debug' => :debug,
+  'Profile' => :release,
+  'Release' => :release,
+}
+
+def flutter_root
+  generated_xcode_build_settings_path = File.expand_path(File.join('..', 'Flutter', 'Generated.xcconfig'), __FILE__)
+  unless File.exist?(generated_xcode_build_settings_path)
+    raise "#{generated_xcode_build_settings_path} must exist. If you're running pod install manually, make sure flutter pub get is executed first"
+  end
+
+  File.foreach(generated_xcode_build_settings_path) do |line|
+    matches = line.match(/FLUTTER_ROOT\=(.*)/)
+    return matches[1].strip if matches
+  end
+  raise "FLUTTER_ROOT not found in #{generated_xcode_build_settings_path}. Try deleting Generated.xcconfig, then run flutter pub get"
+end
+
+require File.expand_path(File.join('packages', 'flutter_tools', 'bin', 'podhelper'), flutter_root)
+
+flutter_ios_podfile_setup
+
+target 'Runner' do
+  use_frameworks!
+  use_modular_headers!
+
+  flutter_install_all_ios_pods File.dirname(File.realpath(__FILE__))
+  target 'RunnerTests' do
+    inherit! :search_paths
+  end
+end
+
+target 'WireGuardNetworkExtensioniOS' do
+  use_frameworks!
+end
+
+target 'OpenVPNNetworkExtensioniOS' do
+  use_frameworks!
+  pod 'OpenVPNAdapter', :git => 'https://github.com/ss-abramchuk/OpenVPNAdapter.git', :tag => '0.7.0'
+end
+
+post_install do |installer|
+  installer.pods_project.targets.each do |target|
+    flutter_additional_ios_build_settings(target)
+  end
+  
+  bitcode_strip_path = `xcrun --find bitcode_strip`.chop!
+ 
+  def strip_bitcode_from_framework(bitcode_strip_path, framework_relative_path)
+    framework_path = File.join(Dir.pwd, framework_relative_path)
+    command = "#{bitcode_strip_path} #{framework_path} -r -o #{framework_path}"
+    puts "Stripping bitcode: #{command}"
+    system(command)
+  end
+ 
+  framework_paths = [
+    "Pods/SpeedcheckerSDK/Framework/DataCompression.xcframework/ios-arm64_armv7/DataCompression.framework/DataCompression",
+    "Pods/SpeedcheckerSDK/Framework/Socket.xcframework/ios-arm64_armv7/Socket.framework/Socket",
+    "Pods/SpeedcheckerSDK/Framework/SpeedcheckerReportSDK.xcframework/ios-arm64/SpeedcheckerReportSDK.framework/SpeedcheckerReportSDK",
+    "Pods/SpeedcheckerSDK/Framework/SpeedcheckerSDK.xcframework/ios-arm64/SpeedcheckerSDK.framework/SpeedcheckerSDK",
+    "Pods/SpeedcheckerSDK/Framework/XMLParsing.xcframework/ios-arm64/XMLParsing.framework/XMLParsing"
+  ]
+
+  #xcrun bitcode_strip -r Pods/SpeedcheckerSDK/Framework/DataCompression.xcframework/ios-arm64_armv7/DataCompression.framework/DataCompression -o Pods/SpeedcheckerSDK/Framework/DataCompression.xcframework/ios-arm64_armv7/DataCompression.framework/DataCompression
+  #
+  #xcrun bitcode_strip -r Pods/SpeedcheckerSDK/Framework/Socket.xcframework/ios-arm64_armv7/Socket.framework/Socket -o Pods/SpeedcheckerSDK/Framework/Socket.xcframework/ios-arm64_armv7/Socket.framework/Socket
+  #
+  #xcrun bitcode_strip -r Pods/SpeedcheckerSDK/Framework/SpeedcheckerReportSDK.xcframework/ios-arm64/SpeedcheckerReportSDK.framework/SpeedcheckerReportSDK -o Pods/SpeedcheckerSDK/Framework/SpeedcheckerReportSDK.xcframework/ios-arm64/SpeedcheckerReportSDK.framework/SpeedcheckerReportSDK
+  #
+  #xcrun bitcode_strip -r Pods/SpeedcheckerSDK/Framework/SpeedcheckerSDK.xcframework/ios-arm64/SpeedcheckerSDK.framework/SpeedcheckerSDK -o Pods/SpeedcheckerSDK/Framework/SpeedcheckerSDK.xcframework/ios-arm64/SpeedcheckerSDK.framework/SpeedcheckerSDK
+  #
+  #xcrun bitcode_strip -r Pods/SpeedcheckerSDK/Framework/XMLParsing.xcframework/ios-arm64/XMLParsing.framework/XMLParsing -o Pods/SpeedcheckerSDK/Framework/XMLParsing.xcframework/ios-arm64/XMLParsing.framework/XMLParsing
+ 
+  framework_paths.each do |framework_relative_path|
+    strip_bitcode_from_framework(bitcode_strip_path, framework_relative_path)
+  end
+
+end
