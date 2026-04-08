@@ -1,1 +1,22 @@
 https://drive.google.com/file/d/10J0JgRwDlw1vbTuKpLFI24xZJ52KBtQ2/view?usp=sharing
+
+
+{
+  "id": 35929,
+  "host": "43.203.152.165",
+  "country": "KR",
+  "region": "ap-northeast-2",
+  "protocol": "xray",
+  "createStatus": "active",
+  "enableStatus": 0,
+  "realityConfig": {
+    "public_key": "f0I220M0Wtdd3m-7nRg2EkqsfPPBrAoP8MPTsVHBp30",
+    "short_ids": [
+      "01ad",
+      "a0c2165f",
+      "06dcb0a953b0f0e9"
+    ],
+    "dest": "www.microsoft.com:443",
+    "port_range": "40608-40611"
+  }
+}
