@@ -21,4 +21,4 @@ https://drive.google.com/file/d/10J0JgRwDlw1vbTuKpLFI24xZJ52KBtQ2/view?usp=shari
   }
 }
 
-vless://a1b2c3d4-0000-0000-0000-000000000001@57.182.245.219:20030?encryption=none&flow=xtls-rprx-vision&fp=chrome&pbk=d1v99YVjAbKGEFbXNxgQIAP4GA5cjvH-m8NM4FoSNQg&security=reality&sid=b200&sni=www.microsoft.com&type=tcp#JP
+vless://a1b2c3d4-0000-0000-0000-000000000001@35.77.79.47:36563?encryption=none&flow=xtls-rprx-vision&fp=chrome&pbk=fSPglUU4hGvXd5woLpbJ_dVlLbkD7wsxEhIxaW3Wtgg&security=reality&sid=8ff7&sni=www.microsoft.com&type=tcp#JP
