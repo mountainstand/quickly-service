@@ -1,1 +1,1 @@
-vless://a1b2c3d4-0000-0000-0000-000000000001@54.238.222.79:39414?encryption=none&flow=xtls-rprx-vision&fp=chrome&pbk=e5BdmqqWyTrO2WH7Z3IujlO8KicM1D06VoNpguv3y38&security=reality&sid=2d67&sni=www.microsoft.com&type=tcp#JP
+vless://a1b2c3d4-0000-0000-0000-000000000001@149.104.78.146:44459?encryption=none&flow=xtls-rprx-vision&fp=chrome&pbk=hGsZaZNoO01gTS5Whe1bMFAwtbRUulWi2s01VSbOJzM&security=reality&sid=e391&sni=www.microsoft.com&type=tcp#JP
