@@ -1,1 +1,1 @@
-https://drive.google.com/file/d/1VHdniAaglPvnqPNBO3Pusa5dL6aus7Nt/view?usp=sharing
+vless://a1b2c3d4-0000-0000-0000-000000000001@54.238.222.79:39414?encryption=none&flow=xtls-rprx-vision&fp=chrome&pbk=e5BdmqqWyTrO2WH7Z3IujlO8KicM1D06VoNpguv3y38&security=reality&sid=2d67&sni=www.microsoft.com&type=tcp#JP
